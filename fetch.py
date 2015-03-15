@@ -7,7 +7,6 @@ import calendar
 import json
 import os
 from datetime import datetime, timedelta
-import sys
 
 begin = 2015
 end = 2015
@@ -32,8 +31,7 @@ for reservior in {'主要水庫', '所有水庫', '水庫及攔河堰'}:
 
                 """ it will delay 1~2 days for data update, so will fetch (now - 2) days """
                 if datetime(year, month, day) > now - timedelta(days=2):
-                    print "date upate to", year, month, (day - 1)
-                    #sys.exit(0)
+                    #print "date upate to", year, month, (day - 1)
                     continue
                 
 
